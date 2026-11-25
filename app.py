@@ -22,7 +22,7 @@ def home():
     conn.commit()
     cur.close()
     conn.close()
-    return f"Hello from my own AWS + Docker project! Visits: {count}"
+    return f"Hello from my CI/CD pipeline! Visits: {count}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
